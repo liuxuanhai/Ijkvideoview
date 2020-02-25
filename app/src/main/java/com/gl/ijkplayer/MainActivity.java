@@ -1,29 +1,20 @@
 package com.gl.ijkplayer;
-
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Build;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-
 import com.airbridge.ijkplayerlib.widget.IjkVideoView;
-
-import tv.danmaku.ijk.media.player.IMediaPlayer;
 
 public class MainActivity extends AppCompatActivity {
     IjkVideoView videoview;
     EditText edit;
-
 //        String path = "android.resource://" + getPackageName() + "/" + R.raw.a11;//放在程序内部 raw文件夹
 //        String path = "http://ivi.bupt.edu.cn/hls/cctv2.m3u8";//直播链接
 //        String path = "http://mp4.vjshi.com/2013-05-28/2013052815051372.mp4";//网络获取视频资源
-//     String path = Environment.getExternalStorageDirectory().getPath() + "/a12.flv";//存放在手机存储卡根目录下
-    String path = Environment.getExternalStorageDirectory().getPath() + "/a11.avi";//存放在手机存储卡根目录下
+//        String path = Environment.getExternalStorageDirectory().getPath() + "/a12.flv";//存放在手机存储卡根目录下
+          String path = Environment.getExternalStorageDirectory().getPath() + "/a11.avi";//存放在手机存储卡根目录下
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
